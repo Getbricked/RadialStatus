@@ -330,10 +330,13 @@
 		display: block;
 	}
 
-	._9293f6b2fc12398a-upperContainer ._44b0c28be7879b7b-wrapper, .ac6cb02cd15b4b3b-quickswitcher {
-		img {
-			margin-left: 2px;
-			margin-top: 2px;
-		}
+	// Fix for avatar size and off centered status
+	._44b0c28be7879b7b-wrapper.f75fb00fb7356cbe-avatar {
+		margin-left: var(--rs-small-width);
+	}
+	
+	._44b0c28be7879b7b-wrapper[style*="20px"] foreignObject[mask*=svg-mask-avatar-status-round-20] {
+		width: 25px;
+		height: 25px;
 	}
 }
